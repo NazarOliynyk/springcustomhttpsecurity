@@ -37,7 +37,7 @@ public class Security extends WebSecurityConfigurerAdapter{
                          //.authenticationEntryPoint(customBasicAuthEntryPoint())
                          //if We don't need sessions to be created.
                          .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
+                        // STATELESS - session is missing
              }
 
         private BasicAuthenticationEntryPoint customBasicAuthEntryPoint(){
